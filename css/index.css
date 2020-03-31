@@ -1,0 +1,785 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration-line: none;
+}
+.blue{
+    border-top: 0.3px solid blue;
+}
+.green{
+    border-top: 0.3px solid green;
+}
+.yellow{
+    border-top: 0.3px solid yellow;
+}
+.orange{
+    border-top: 0.3px solid orange;
+}
+.word{
+    color: #555;
+    height: 30px;
+    padding-left: 14px;
+    padding-right: 20px;
+}
+.p{
+    font-size: 18px;
+}
+.p a{
+    color: black;
+    transition: 0.1s linear all;
+}
+.p a:hover{
+    color: #ff6700;
+}
+
+/*商品小图标块的样式*/
+.little_img{
+    transition: 0.2s linear all;
+}
+.little_img div:hover{
+    transform: translateY(-2px);
+    box-shadow: #ddd 0px 10px 30px;
+}
+.little{
+    width: 234px;
+    height: 280px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: white;
+    transition: 0.2s linear all;
+}
+.little img{
+    width: 160px;
+}
+.little{
+    font-size: 14.5px;
+}
+.little a{
+    color: black;
+}
+.little span{
+    text-decoration: line-through;
+    color: #888888
+}
+.small_1{
+    background-color: #fff;
+    height: 143px;
+}
+.small_1{
+    font-size: 14.5px;
+    margin-bottom: 14px;
+}
+.small_1 a{
+    color: #000;
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+.small_1 img{
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.small_2{
+    background-color: #fff;
+    height: 93px;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+.small_2 a{
+    color: #000;
+    display: inline-block;
+    width: 160px;
+}
+.small_2 img{
+    margin-top: -76px;
+    width: 70px;height: 70px;
+}
+#help,#footer{
+    height: 70px;
+    border-bottom: 2px solid black;
+}
+/*页面的顶部样式*/
+#header{
+    height: 40px;
+    background-color: #333;
+    padding-left: 13.3%;
+    padding-right: 230px;
+    line-height: 39px;
+    font-size: 12.5px;
+}
+#header .header_left ul li{
+    float: left;
+}
+#header .header_left ul li a{
+    color: #b0b0b0;
+    border-right: 1px solid #393f42;
+    padding:0px 7px;
+}
+#header .header_left .se a{
+    border: none;
+}
+#header .header_left ul li a:hover{
+    color: white;
+}
+#header .header_right ul li{
+    float: right;
+}
+#header .header_right ul li a{
+    color: #b0b0b0;
+    border-left: 1px solid #393f42;
+    padding:0px 7px;
+}
+#header .header_right ul li a:hover{
+    color: white;
+}
+#header .header_right .se a{
+    border: none;
+}
+#header .header_right .shopping_car div{
+    float: right;
+    width: 100px;
+    height: 38px;
+    color: #b0b0b0;
+    margin-left: 20px;
+    padding-right: 20px;
+    background-color: #424242;
+}
+/*页面导航栏样式*/
+#nav{
+    height: 100px;
+}
+#nav #mi{
+    width: 55px;
+    height: 55px;
+    float: left;
+    background-color: #ff6700;
+    margin-top: 23px;
+    margin-left:13.7%;
+}
+#nav .nav_left ul {
+    float: left;
+    margin-top: 39px;
+    margin-left: 190px;
+}
+#nav .nav_left ul li{
+    float: left;
+    font-size: 15.8px;
+    color: #2D2D2D;
+    padding-right: 20px;
+}
+#nav .nav_left ul li a{
+    color: #2D2D2D;
+}
+#nav .nav_left ul li a:hover{
+    color: orange;
+}
+/*banner图部分样式*/
+#banner{
+    height: 670px;
+}
+#banner .banner {
+    width: 1300px;
+    padding-left: 232px;
+}
+#banner .banner_left{
+    float: left;
+    margin-left: 215px;
+    margin-top: 9px;
+}
+#banner .banner img{
+    width: 1226px;
+}
+#banner .banner_left ul li {
+    float: left;
+    margin-left: 15px;
+}
+#banner .banner_left .list{
+    height: 170px;
+    width: 235px;
+    background-color: #666666;
+}
+#banner ul li img{
+    height: 170px;
+}
+/*小米闪购部分样式*/
+#shopping{
+    background-color: #f5f5f5;
+    height: 560px;
+}
+#shopping .shop{
+    padding-top: 20px;
+    font-size: 22px;
+    width: 1235px;
+    height: 500px;
+    margin: 0 auto;
+}
+#shopping .shop ul li{
+    float: left;
+}
+#shopping .shop .red a{
+    display: inline-block;
+    margin-top: 20px;
+    border-top: 0.3px solid red;
+    background-color: #f1eded;
+    width: 235px;
+    height: 340px;
+}
+#shopping .shop .shop_right a{
+    display: inline-block;
+    margin-top:  20px;
+    margin-left: 12px;
+    background-color: white;
+    width: 235px;
+    height: 340px;
+}
+
+#shopping .shop .k30 img{
+    width: 1230px;
+    margin-top: 20px;
+}
+/*手机页面的样式*/
+#phone{
+    height: 840px;
+    background-color: #f5f5f5;
+}
+#phone .mi_phone{
+    width: 1230px;
+    height: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 22px;
+}
+#phone .alpha img{
+    width: 234px;
+    margin-top: 12px;
+    transition: 0.3s linear all;
+}
+#phone .alpha img:hover{
+    transform: translateY(-2px);
+}
+#phone .mi_phone .eight{
+    width: 994px;
+    height: 650px;
+    margin-top: 13px;
+}
+#phone .mi_phone ul{
+    float: left;
+}
+#phone .mi_phone ul li{
+    float: left;
+    margin-left: 14px;
+    margin-bottom: 15px;
+}
+#phone .mi_phone  div{
+    transition: 0.2s linear all;
+}
+#phone .mi_phone ul li div:hover{
+    transform: translateY(-2px);
+    box-shadow: #ddd 0px 10px 30px;
+}
+#phone .mi_phone .te img{
+    width: 1230px;
+}
+/*------------------------------*/
+#phone .mi_phone .little .introduce{
+    font-size: 12px;
+    color: #888;
+}
+#phone .mi_phone .little .price{
+    color: #ff6700;
+}
+/*------------------------------*/
+
+/*家电部分的样式*/
+#machine{
+    height: 860px;
+    background-color: #f5f5f5;
+}
+#machine .mi_machine{
+    width: 1255px;
+    height: 810px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 22px;
+}
+#machine .mi_machine .word{
+    height: 35px;
+}
+#machine .mi_machine .word ul li {
+    float: right;
+    margin-left: 15px;
+    line-height: 30px;
+}
+#machine .mi_machine .word a{
+    color: black;
+    height: 20px;
+    font-size: 16px;
+}
+#machine .mi_machine .word ul li div{
+    height: 30px;
+}
+#machine .mi_machine .word a:hover{
+    color: #ff6700;
+}
+#machine .mi_machine .word ul li div:hover{
+    border-bottom: 2px solid #ff6700;
+}
+#machine .machine_left img{
+    width: 234px;
+}
+#machine .machine_left ul{
+    float: left;
+    margin-top: 20px;
+}
+#machine .machine_left ul li{
+    float: left;
+    width: 234px;
+    height: 300px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+    transition: 0.25s linear all;
+}
+#machine .mi_machine .machine_left .little img{
+    width: 160px;
+}
+
+
+#machine .mi_machine .little .introduce{
+    font-size: 12px;
+    color: #888;
+}
+#machine .mi_machine .little .price{
+    color: #ff6700;
+}
+
+
+
+#machine .mi_machine  div{
+    transition: 0.2s linear all;
+}
+#machine .mi_machine ul div:hover{
+    transform: translateY(-2px);
+    box-shadow: #ddd 0px 10px 30px;
+}
+
+
+
+#machine .mi_machine .te img{
+    width: 1230px;
+    padding-top: 20px;
+    padding-left: 14px;
+}
+/*智能部分的样式*/
+#ai{
+    height: 860px;
+    background-color: #f5f5f5;
+}
+#ai .mi_ai{
+    width: 1255px;
+    height: 810px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 22px;
+}
+#ai .mi_ai .word{
+    height: 35px;
+}
+#ai .mi_ai .word ul li {
+    float: right;
+    margin-left: 15px;
+    line-height: 30px;
+}
+#ai .mi_ai .word a{
+    color: black;
+    height: 20px;
+    font-size: 16px;
+}
+#ai .mi_ai .word ul li div{
+    height: 25px;
+}
+#ai .mi_ai .word a:hover{
+    color: #ff6700;
+}
+#ai .mi_ai .word ul li div:hover{
+    border-bottom: 2px solid #ff6700;
+}
+#ai .ai_left img{
+    width: 234px;
+}
+
+#ai .mi_ai .little .introduce{
+    font-size: 12px;
+    color: #888;
+}
+#ai .mi_ai .little .price{
+    color: #ff6700;
+}
+
+
+#ai .ai_left ul{
+    float: left;
+    margin-top: 20px;
+}
+#ai .ai_left ul li{
+    float: left;
+    width: 234px;
+    height: 300px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+    transition: 0.25s linear all;
+}
+#ai .mi_ai .ai_left .little img{
+    width: 160px;
+}
+#ai .mi_ai  div{
+    transition: 0.2s linear all;
+}
+#ai .mi_ai ul div:hover{
+    transform: translateY(-2px);
+    box-shadow: #ddd 0px 10px 30px;
+}
+#ai .mi_ai .te img{
+    width: 1230px;
+    padding-top: 20px;
+    padding-left: 14px;
+}
+/*配件部分的样式*/
+#collection{
+    height: 860px;
+    background-color: #f5f5f5;
+}
+#collection .mi_collection{
+    width: 1255px;
+    height: 810px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 22px;
+}
+#collection .mi_collection .word{
+    height: 35px;
+}
+#collection .mi_collection .word ul li {
+    float: right;
+    margin-left: 15px;
+    line-height: 30px;
+}
+#collection .mi_collection .word a{
+    color: black;
+    height: 20px;
+    font-size: 16px;
+}
+#collection .mi_collection .word ul li div{
+    height: 25px;
+}
+#collection .mi_collection .word a:hover{
+    color: #ff6700;
+}
+#collection .mi_collection .word ul li div:hover{
+    border-bottom: 2px solid #ff6700;
+}
+
+#collection .mi_collection .little .introduce{
+    font-size: 12px;
+    color: #888;
+}
+#collection .mi_collection .little .price{
+    color: #ff6700;
+}
+
+#collection .collection_left img{
+    width: 234px;
+}
+#collection .collection_left ul{
+    float: left;
+    margin-top: 20px;
+}
+#collection .collection_left ul li{
+    float: left;
+    width: 234px;
+    height: 300px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+    transition: 0.25s linear all;
+}
+#collection .mi_collection .collection_left .little img{
+    width: 160px;
+}
+#collection .mi_collection  div{
+    transition: 0.2s linear all;
+}
+#collection .mi_collection ul div:hover{
+    transform: translateY(-2px);
+    box-shadow: #ddd 0px 10px 30px;
+}
+#collection .mi_collection .te img{
+    width: 1230px;
+    padding-top: 20px;
+    padding-left: 14px;
+}
+/*配件部分的样式*/
+#accessory{
+    height: 860px;
+    background-color: #f5f5f5;
+}
+#accessory .mi_accessory{
+    width: 1255px;
+    height: 810px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 22px;
+}
+#accessory .mi_accessory .word{
+    height: 35px;
+}
+#accessory .mi_accessory .word ul li {
+    float: right;
+    margin-left: 15px;
+    line-height: 30px;
+}
+#accessory .mi_accessory .word a{
+    color: black;
+    height: 20px;
+    font-size: 16px;
+}
+#accessory .mi_accessory .word ul li div{
+    height: 25px;
+}
+#accessory .mi_accessory .word a:hover{
+    color: #ff6700;
+}
+#accessory .mi_accessory .word ul li div:hover{
+    border-bottom: 2px solid #ff6700;
+}
+#accessory .mi_accessory .little .introduce{
+    font-size: 12px;
+    color: #888;
+}
+#accessory .mi_accessory .little .price{
+    color: #ff6700;
+}
+#accessory .accessory_left img{
+    width: 234px;
+}
+#accessory .accessory_left ul{
+    float: left;
+    margin-top: 20px;
+}
+#accessory .accessory_left ul li{
+    float: left;
+    width: 234px;
+    height: 300px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+    transition: 0.25s linear all;
+}
+#accessory .mi_accessory .accessory_left .little img{
+    width: 160px;
+}
+#accessory .mi_accessory  div{
+    transition: 0.2s linear all;
+}
+#accessory .mi_accessory ul div:hover{
+    transform: translateY(-2px);
+    box-shadow: #ddd 0px 10px 30px;
+}
+#accessory .mi_accessory .te img{
+    width: 1230px;
+    padding-top: 20px;
+    padding-left: 14px;
+}
+/*周边部分的样式*/
+#found{
+    height: 860px;
+    background-color: #f5f5f5;
+}
+#found .mi_found{
+    width: 1255px;
+    height: 810px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 22px;
+}
+#found .mi_found .word{
+    height: 35px;
+}
+#found .mi_found .word ul li {
+    float: right;
+    margin-left: 15px;
+    line-height: 30px;
+}
+#found .mi_found .word a{
+    color: black;
+    height: 20px;
+    font-size: 16px;
+}
+
+#found .mi_found .little .introduce{
+    font-size: 12px;
+    color: #888;
+}
+#found .mi_found .little .price{
+    color: #ff6700;
+}
+#found .mi_found .word ul li div{
+    height: 25px;
+}
+#found .mi_found .word a:hover{
+    color: #ff6700;
+}
+#found .mi_found .word ul li div:hover{
+    border-bottom: 2px solid #ff6700;
+}
+#found .found_left img{
+    width: 234px;
+}
+#found .found_left ul{
+    float: left;
+    margin-top: 20px;
+}
+#found .found_left ul li{
+    float: left;
+    width: 234px;
+    height: 300px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+    transition: 0.25s linear all;
+}
+#found .mi_found .found_left .little img{
+    width: 160px;
+}
+#found .mi_found  div{
+    transition: 0.2s linear all;
+}
+#found .mi_found ul div:hover{
+    transform: translateY(-2px);
+    box-shadow: #ddd 0px 10px 30px;
+}
+#found .mi_found .te img{
+    width: 1230px;
+    padding-top: 20px;
+    padding-left: 14px;
+}
+/*视频部分的样式*/
+#video{
+    height: 380px;
+    background-color: #f5f5f5;
+}
+#video .mi_video{
+    width: 1255px;
+    height: 360px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 22px;
+}
+#video .video_list{
+    width: 1255px;
+    height: 350px;
+}
+#video .video_list ul li{
+    width: 296px;
+    height: 285px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: white;
+    text-align: center;
+    transition:0.2s linear all;;
+}
+#video .video_list ul li:hover{
+    transform: translateY(-2px);
+    box-shadow: #ddd 0px 10px 30px;
+}
+#video .video_list ul li img{
+    width: 296px;
+}
+#video .video_list ul li a{
+    font-size: 15px;
+    color: #333;
+}
+#video .video_list ul li div{
+    width: 296px;
+    height: 70px;
+    padding-top: 28px;
+}
+/*售后部分的样式*/
+#back{
+    height: 110px;
+    background-color: white;
+}
+#back .mi_back{
+    height: 55px;
+    width: 1230px;
+    margin:auto;
+    padding-top: 30px;
+    border-bottom: 0.1px solid #ccc;
+}
+#back .mi_back ul li{
+    float: left;
+    font-size: 17px;
+    padding: 0px 69px;
+    border-right: 0.1px solid #ccc;
+}
+#back .mi_back ul li a{
+    color: #666;
+}
+#back .mi_back ul li a:hover{
+    color: #ff6700;
+}
+#back .mi_back .none{
+    border: none;
+}
+/*帮助中心部分的样式*/
+#help{
+    height: 200px;
+}
+#help .title{
+    width: 1230px;
+    height: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#help .title ul li{
+    float: left;
+    font-size: 14px;
+    color: #2D2D2D;
+    margin-right: 102px;
+}
+#help .mi_help{
+    width: 1230px;
+    height: 190px;
+    margin: auto;
+}
+#help .mi_help ul li{
+    float: left;
+    width: 80px;
+    height: 130px;
+    margin-right: 75px;
+    padding-left: 2px;
+    text-align: left;
+    line-height: 26px;
+}
+#help .mi_help ul li p{
+    font-size: 14px;
+}
+#help .mi_help ul li a{
+    color: #666;
+    font-size: 12px;
+}
+#help .mi_help ul li a:hover{
+    color: #ff6700;
+}
