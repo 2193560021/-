@@ -109,10 +109,6 @@ a{
     margin-top: -76px;
     width: 70px;height: 70px;
 }
-#help,#footer{
-    height: 70px;
-    border-bottom: 2px solid black;
-}
 /*页面的顶部样式*/
 #header{
     height: 40px;
@@ -724,7 +720,7 @@ a{
 #back .mi_back{
     height: 55px;
     width: 1230px;
-    margin:auto;
+    margin-left: 13.6%;
     padding-top: 30px;
     border-bottom: 0.1px solid #ccc;
 }
@@ -745,12 +741,12 @@ a{
 }
 /*帮助中心部分的样式*/
 #help{
-    height: 200px;
+    height: 220px;
 }
 #help .title{
-    width: 1230px;
+    width: 949px;
     height: 20px;
-    margin: auto;
+    margin-left: 13.6%;
     margin-bottom: 20px;
 }
 #help .title ul li{
@@ -760,9 +756,9 @@ a{
     margin-right: 102px;
 }
 #help .mi_help{
-    width: 1230px;
-    height: 190px;
-    margin: auto;
+    width: 950px;
+    height: 150px;
+    margin-left: 13.6%;
 }
 #help .mi_help ul li{
     float: left;
@@ -782,4 +778,43 @@ a{
 }
 #help .mi_help ul li a:hover{
     color: #ff6700;
+}
+#help .mi_tel{
+    clear: both;
+    width: 270px;
+    height: 110px;
+    margin-top: -185px;
+    margin-left: 1190px;
+    text-align: center;
+    border-left: 0.1px solid #ccc;
+}#help .mi_tel p{
+    font-size: 21px;
+    color: #ff6700;
+ }
+#help .mi_tel .tel_1{
+    color: #666666;
+    font-size: 12.5px;
+}
+#help .mi_tel .kefu{
+    width: 125px;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 12.5px;
+    color: #ff6700;
+    line-height: 30px;
+    border: 0.3px solid #ff6700;
+    transition: 0.1s linear all;
+}
+#help .mi_tel .kefu:hover{
+    background-color: #ff6700;
+    color: white;
+}
+#help .mi_tel span{
+    display: inline-block;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border: 0.2px dashed black;
 }
