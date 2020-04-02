@@ -12,7 +12,7 @@ ul,ol{
     list-style-type: none;
 }
 a{
-    text-decoration-line: none;
+    text-decoration: none;
 }
 .blue{
     border-top: 0.3px solid blue;
@@ -58,12 +58,10 @@ a{
     padding-top: 20px;
     background-color: white;
     transition: 0.2s linear all;
+    font-size: 14.5px;
 }
 .little img{
     width: 160px;
-}
-.little{
-    font-size: 14.5px;
 }
 .little a{
     color: black;
@@ -75,8 +73,6 @@ a{
 .small_1{
     background-color: #fff;
     height: 143px;
-}
-.small_1{
     font-size: 14.5px;
     margin-bottom: 14px;
 }
@@ -92,6 +88,9 @@ a{
 .small_1 img{
     margin-top: 40px;
     margin-right: 20px;
+}
+.small_1 .price{
+    color: #ff6700;
 }
 .small_2{
     background-color: #fff;
@@ -113,15 +112,17 @@ a{
 #header{
     height: 40px;
     background-color: #333;
-    padding-left: 13.3%;
-    padding-right: 230px;
     line-height: 39px;
     font-size: 12.5px;
+}
+#header .mi_header{
+    width: 1230px;
+    margin: 0 auto;
 }
 #header .header_left ul li{
     float: left;
 }
-#header .header_left ul li a{
+#header  ul li a{
     color: #b0b0b0;
     border-right: 1px solid #393f42;
     padding:0px 7px;
@@ -134,11 +135,6 @@ a{
 }
 #header .header_right ul li{
     float: right;
-}
-#header .header_right ul li a{
-    color: #b0b0b0;
-    border-left: 1px solid #393f42;
-    padding:0px 7px;
 }
 #header .header_right ul li a:hover{
     color: white;
@@ -158,6 +154,8 @@ a{
 /*页面导航栏样式*/
 #nav{
     height: 100px;
+    width: 1230px;
+    margin: 0 auto;
 }
 #nav #mi{
     width: 55px;
@@ -165,12 +163,15 @@ a{
     float: left;
     background-color: #ff6700;
     margin-top: 23px;
-    margin-left:13.7%;
+    cursor: pointer;
+}
+#nav .nav_left{
+    width: 800px;
+    margin: 0 auto;
 }
 #nav .nav_left ul {
     float: left;
-    margin-top: 39px;
-    margin-left: 190px;
+    margin:39px auto;
 }
 #nav .nav_left ul li{
     float: left;
@@ -189,25 +190,46 @@ a{
     height: 670px;
 }
 #banner .banner {
-    width: 1300px;
-    padding-left: 232px;
+    width: 1230px;
+    margin: 0 auto;
 }
 #banner .banner_left{
-    float: left;
-    margin-left: 215px;
-    margin-top: 9px;
+    width: 1240px;
+    margin: 10px auto;
+    transform: translateX(-10px);
 }
 #banner .banner img{
     width: 1226px;
 }
 #banner .banner_left ul li {
     float: left;
-    margin-left: 15px;
+    margin-left: 14px;
 }
 #banner .banner_left .list{
     height: 170px;
     width: 235px;
-    background-color: #666666;
+    background-color: #5f5750;
+}
+#banner .banner_left .list ul li{
+    float: left;
+    font-size: 12px;
+    width: 78px;
+    height: 85px;
+    margin-left: 0px;
+    text-align: center;
+    border-bottom: 0.1px solid #666;
+    border-right: 0.1px solid #666;
+}
+#banner .banner_left .list ul li img{
+    width: 24px;
+    height: 24px;
+    margin: 20px auto 3px;
+}
+#banner .banner_left .list ul li a{
+    color: #ccc;
+}
+#banner .banner_left .list ul li a:hover{
+    color: white;
 }
 #banner ul li img{
     height: 170px;
@@ -364,8 +386,6 @@ a{
     color: #ff6700;
 }
 
-
-
 #machine .mi_machine  div{
     transition: 0.2s linear all;
 }
@@ -373,8 +393,6 @@ a{
     transform: translateY(-2px);
     box-shadow: #ddd 0px 10px 30px;
 }
-
-
 
 #machine .mi_machine .te img{
     width: 1230px;
@@ -715,14 +733,13 @@ a{
 }
 /*售后部分的样式*/
 #back{
-    height: 110px;
+    height: 90px;
     background-color: white;
 }
 #back .mi_back{
     height: 55px;
     width: 1230px;
-    margin-left: 13.6%;
-    padding-top: 30px;
+    margin:30px auto;
     border-bottom: 0.1px solid #ccc;
 }
 #back .mi_back ul li{
@@ -745,9 +762,9 @@ a{
     height: 220px;
 }
 #help .title{
-    width: 949px;
+    width: 1230px;
     height: 20px;
-    margin-left: 13.6%;
+    margin: auto;
     margin-bottom: 20px;
 }
 #help .title ul li{
@@ -756,10 +773,15 @@ a{
     color: #2D2D2D;
     margin-right: 102px;
 }
+#help .help_1{
+    width: 1230px;
+    height: 270px;
+    margin: auto;
+}
 #help .mi_help{
     width: 950px;
     height: 150px;
-    margin-left: 13.6%;
+    float: left;
 }
 #help .mi_help ul li{
     float: left;
@@ -785,7 +807,7 @@ a{
     width: 270px;
     height: 110px;
     margin-top: -185px;
-    margin-left: 1190px;
+    float: right;
     text-align: center;
     border-left: 0.1px solid #ccc;
 }#help .mi_tel p{
@@ -819,7 +841,7 @@ a{
     height: 15px;
     border: 0.2px dashed black;
 }
-/*左侧栏部分的样式*/
+/*右侧栏部分的样式*/
 #right_list{
     width: 84px;
     height: 460px;
