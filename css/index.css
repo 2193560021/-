@@ -865,3 +865,27 @@ a{
 #right_list .right_list ul li:hover{
     color: #ff6700;
 }
+/*返回顶部的样式*/
+#goTop{
+    width: 84px;
+    height: 84px;
+    position: fixed;
+    top: 650px;
+    right: 2px;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+}
+#goTop a{
+    font-size: 14px;
+    color: #757575;
+
+}
+#goTop a:hover{
+    color: #ff6700;
+}
+#goTop img{
+    width: 30px;
+    margin: 17px auto 1px;
+}

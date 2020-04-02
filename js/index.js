@@ -1,5 +1,35 @@
-$(document).ready(function () {
-        $("li.hh1").mouseover(function () {
-            $(.hh1).attr("src","74c4fcb4475af8308e9a670db9c01fdf (1).png");
-        })
+window.onload=function(){
+	var gotop = document.getElementById("goTop");
+	var timer =null;
+	gotop.onclick = function(){
+		//定时器
+	timer = setInterval(function(){
+		var backtop = document.documentElement.scrollTop || document.body.scrollTop;
+		var speed = backtop/40;
+		document.documentElement.scrollTop = backtop-speed;
+		if(backtop == 0){
+			clearInterval(timer);
+		}
+		},0.1);
+	}
+	//显示 or 隐藏
+	var pH = 900;
+	window.onscroll = function(){
+		var backtop = document.documentElement.scrollTop || document.body.scrollTop;
+		if(backtop>pH){
+			gotop.style.display = "block";
+
+		}
+		else{
+			gotop.style.display = "none";
+		}
+	}
+}
+
+$(window).scroll(function(){
+	var pH = 900;
+	var backtop = document.documentElement.scrollTop || document.body.scrollTop;
+	if(backtop==ph){
+		$("#goTop").addClass("animated bounceInUp show");
+	} 
 })
