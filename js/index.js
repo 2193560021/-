@@ -25,11 +25,3 @@ window.onload=function(){
 		}
 	}
 }
-
-$(window).scroll(function(){
-	var pH = 900;
-	var backtop = document.documentElement.scrollTop || document.body.scrollTop;
-	if(backtop==ph){
-		$("#goTop").addClass("animated bounceInUp show");
-	} 
-})

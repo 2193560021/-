@@ -32,17 +32,6 @@ a{
     padding-left: 14px;
     padding-right: 20px;
 }
-.p{
-    font-size: 18px;
-}
-.p a{
-    color: black;
-    transition: 0.1s linear all;
-}
-.p a:hover{
-    color: #ff6700;
-}
-
 /*商品小图标块的样式*/
 .little_img{
     transition: 0.2s linear all;
@@ -133,6 +122,9 @@ a{
 #header .header_left ul li a:hover{
     color: white;
 }
+#header .header_right{
+    width: 265px;
+}
 #header .header_right ul li{
     float: right;
 }
@@ -142,14 +134,28 @@ a{
 #header .header_right .se a{
     border: none;
 }
-#header .header_right .shopping_car div{
-    float: right;
-    width: 100px;
-    height: 38px;
+#header .header_right .shopping_car{
+    display: block;
+    width: 120px;
+    height: 40px;
+    font-size: 13.5px;
+    text-align: center;
+    line-height: 40px;
     color: #b0b0b0;
-    margin-left: 20px;
-    padding-right: 20px;
     background-color: #424242;
+    transition: 0.1s linear all;
+}
+#header .header_right .shopping_car:hover{
+    color: #ff6700;
+    background-color: white;
+}
+.shopping_car span{
+    margin-top: -5px;
+}
+.shopping_car img{
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
 }
 /*页面导航栏样式*/
 #nav{
@@ -343,19 +349,23 @@ a{
     float: right;
     margin-left: 15px;
     line-height: 30px;
+    height: 30px;
 }
 #machine .mi_machine .word a{
     color: black;
     height: 20px;
     font-size: 16px;
 }
-#machine .mi_machine .word ul li div{
-    height: 30px;
+#machine .mi_machine .word .hot a{
+    color: #ff6700;
+}
+#machine .mi_machine .word .hot li{
+    border-bottom: 2px solid #ff6700;
 }
 #machine .mi_machine .word a:hover{
     color: #ff6700;
 }
-#machine .mi_machine .word ul li div:hover{
+#machine .mi_machine .word ul li:hover{
     border-bottom: 2px solid #ff6700;
 }
 #machine .machine_left img{
@@ -880,7 +890,6 @@ a{
 #goTop a{
     font-size: 14px;
     color: #757575;
-
 }
 #goTop a:hover{
     color: #ff6700;
